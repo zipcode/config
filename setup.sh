@@ -1,5 +1,6 @@
 #!/bin/bash
-ln -s bashrc ../.bashrc
-ln -s bash_profile ../.bash_profile
-ln -s emacs ../.emacs
-ln -s screenrc ../.screenrc
+cd $HOME
+ln -s config/bashrc .bashrc
+ln -s config/bash_profile .bash_profile
+ln -s config/emacs .emacs
+ln -s config/screenrc .screenrc
