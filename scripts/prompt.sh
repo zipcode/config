@@ -18,7 +18,7 @@ function setps1 {
   fi
 
   export PS1="\
-$N$B$bl\!$w $remote\$(is_afs '${N}${m}afs:${B}')$m\W$N \$(get_git_branch '$g%s$N ')\
+$N$remote\$(is_afs '${N}${m}afs:${B}')$m\W$N \$(get_git_branch '$g%s$N ')\
 $B$r\${?/0/}$N$w\$(get_git_status)$y\$ $N\
 "
 }
