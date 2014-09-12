@@ -8,8 +8,6 @@ fi
     setps1
 #fi
 
-# Git completion
-#source ~/.git-completion.bash
-
-# Brew
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+function watch-coffee {
+  fswatch -r0 . | xargs -0 -n 1 coffee-check
+}
