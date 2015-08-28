@@ -2,7 +2,7 @@
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Auto-hide dock
-#defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool true
 
 # Remove default stuff from dock
 seq $[$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | wc -l)-1] 0 | xargs -I {} /usr/libexec/PlistBuddy -c "Delete persistent-apps:{}" ~/Library/Preferences/com.apple.dock.plist
@@ -15,7 +15,7 @@ if [ ! -e /Library/Developer ]; then
   while pgrep "Install Command" >/dev/null; do echo -n .; sleep 5; done
   echo -ne \n
 fi
-if [ ! -e /Library/Develper ]; then
+if [ ! -e /Library/Developer ]; then
   echo "Something went wrong installing developer tools"
   exit 1
 fi
