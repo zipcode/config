@@ -35,3 +35,6 @@ brew cask install vagrant virtualbox virtualbox-extension-pack
 
 # Turn off annoying swipe behaviour
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+
+git clone https://github.com/zipcode/config
+[ -e ./config/setup.sh ] && ./config/setup.sh
