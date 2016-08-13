@@ -8,6 +8,8 @@ export SYSSCREENRC=""
 . $HOME/config/scripts/prompt.sh
 . $HOME/config/scripts/completion.sh
 
+. $HOME/config/scripts/gpg-agent.sh
+
 # root path
 export PATH="$HOME/root/bin:$PATH"
 
